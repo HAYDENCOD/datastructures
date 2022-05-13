@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -9,6 +10,9 @@ public class Maps extends list_in_Java {
         Map<Integer,person> map = new HashMap<>();
         map.put(1,person);
         map.put(2,person1);
+        for (Map.Entry<Integer, person> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " / " +entry.getValue().name + " "+ entry.getValue().age +" "+ entry.getValue().height);
 
+    }
     }
 }
